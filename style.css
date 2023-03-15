@@ -1,0 +1,25 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrossel.css);
+@import url(styles/topicos.css);
+@import url(styles/cadastro.css);
+@import url(styles/rodape.css);
+
+
+:root {
+    --cor-fundo: #EBECEE;
+    --cor-branco:#FFFFFF;
+    --cor-laranja:#EB9B00;
+    --azul-degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul-solido: #002F52;
+    --preto: #000000;
+    --cinza-escuro: #474646;
+    --cinza-claro: #858585;
+
+}
+body{
+    background-color: var(--cor-fundo);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}

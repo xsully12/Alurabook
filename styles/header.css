@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+.cabecalho{
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.cabecalho__menu-imagem {
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    
+}
+
+ .container{
+    display: flex;
+    align-items: center;
+}
+.container__itens {
+    padding: 0.5em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    font-size: 16px;
+    width: 60vw;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container__botao{
+    display: none;
+}
+.opcoes__botao{
+    display: none;
+}
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__itens{
+    padding:1em;
+    padding-left: 2em;
+    background-color: var(--cor-branco);
+}
+.lista-menu__titulo {
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.container__titulo{
+    display: none;
+}
+.container__tablet{
+    display: none;
+}
+.container__itens__descricao{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .central{
+        display: flex;
+        color: var(--preto)
+    }
+    .container{
+        padding:0 2.5em;
+    }
+    .container__titulo,.container__titulo__negrito{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        padding: 0.4em 0 0 0.2em;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo__negrito{
+        font-weight: 700;
+    }
+    .container__tablet, .opções{
+        display: block;
+        padding: 0.5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .cabecalho__menu-imagem{
+        display: none;
+    }
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+    }
+    .lista-menu{
+        width: auto;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+   
+
+ }
+@media screen and (min-width: 1728px){
+    .container__links{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        
+    }
+    .container__itens__descricao{
+        display: flex;
+        font-size: 20px;
+        color: var(--preto);  
+    }
+    .favoritos{
+        display: none;
+    }
+    .central{
+        display: flex;
+        margin-right: auto;
+        color: var(--preto)
+    }
+}
